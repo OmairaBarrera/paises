@@ -9,50 +9,80 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <!--Menu de Navegacion-->
-    <nav class="nav">
-        <ul class="list">
-            <li class="list__item">
-                <div class="list__button">
-                    <a href="#" class="nav__link">Inicio</a>
+    <header>
+        <!--Menu de Navegacion-->
+        <nav class="nav">
+            <ul class="list">
+                <li class="list__item">
+                    <div class="list__button">
+                        <a href="#" class="nav__link">Inicio</a>
+                    </div>
+                </li>
+                <li class="list__item list__item--click">
+                    <div class="list__button list__button--click">
+                        <a href="#" class="nav__link">Idiomas</a>
+                        <img src="./img/arrow.svg" class="list__arrow">
+                    </div>
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">dentro</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">dentro</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">dentro</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list__item list__item--click">
+                    <div class="list__button list__button--click">
+                        <a href="#" class="nav__link">Continentes</a>
+                        <img src="./img/arrow.svg" class="list__arrow">
+                    </div>
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">dentro</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">dentro</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">dentro</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="slide-container">
+            <div class="slide-content">
+                <div class="card-wrapper">
+                    <div class="card">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="./img/africa.jpg" alt="" class="card-img">
+                            </div>
+                            <div class="card-content">
+                                <h1 class="name">nombre</h1>
+                                <p class="region">region</p>
+                                <p class="poblacion">poblacion</p>
+                                <p class="idioma">idioma</p> 
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </li>
-            <li class="list__item list__item--click">
-                <div class="list__button list__button--click">
-                    <a href="#" class="nav__link">Idiomas</a>
-                    <img src="./img/arrow.svg" class="list__arrow">
-                </div>
-                <ul class="list__show">
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">dentro</a>
-                    </li>
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">dentro</a>
-                    </li>
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">dentro</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="list__item list__item--click">
-                <div class="list__button list__button--click">
-                    <a href="#" class="nav__link">Continentes</a>
-                    <img src="./img/arrow.svg" class="list__arrow">
-                </div>
-                <ul class="list__show">
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">dentro</a>
-                    </li>
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">dentro</a>
-                    </li>
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">dentro</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+            </div>
+        </div>
+            
+            <!-- <h1>nombre</h1>
+            <p>region</p>
+            <p>poblacion</p>
+            <p>idioma</p> -->
+    </main>
+
     <!--JS-->
     <script src="./main.js"></script>
 </body>

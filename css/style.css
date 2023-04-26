@@ -7,6 +7,14 @@
 }
 body{
     font-family: 'Caveat', cursive;
+    display: flex;
+}
+header{
+    width: 300px;
+}
+main{
+    width: calc(100vw - 316px);
+    margin-left: auto;
 }
 .nav{
     width: 300px;
@@ -64,4 +72,62 @@ body{
     list-style: none;
     transition: height .4s;
     height: 0;
+}
+
+.slide-content{
+    margin: 0 40px;
+}
+.card{
+    width: 200px;
+    border-radius: 25px;
+    background-color: antiquewhite;
+}
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+.image-content{
+    row-gap: 5px;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 60%;
+    width: 100%;
+    background-color: floralwhite;
+    border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: floralwhite;
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: antiquewhite;
+}
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: goldenrod;
+    padding: 3px;
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid brown;
 }
