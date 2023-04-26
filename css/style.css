@@ -1,11 +1,13 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    font-family: 'Caveat', cursive;
+}
 .nav{
     width: 300px;
 }
@@ -18,6 +20,7 @@
 .nav__link--inside{
     border-radius: 6px;
     padding-left: 20px;
+    text-align: left;
 }
 .nav__link--inside:hover{
     background-color: darkolivegreen;
@@ -46,6 +49,13 @@
     gap: 1em;
     width: 70%;
     margin: 0 auto;
+}
+.arrow .list__arrow{
+    transform: rotate(90deg);
+    transition: transform .3s;
+}
+.list__arrow{
+    margin-left: auto;
 }
 .list__show{
     width: 80%;
