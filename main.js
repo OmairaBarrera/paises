@@ -15,5 +15,5 @@ listElements.forEach(listElement => {
     })
 })
 
-paises.mostrar()
+paises.datos()
 buscador.buscador()
