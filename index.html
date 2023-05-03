@@ -18,7 +18,7 @@
                         <a href="#" class="nav__link">Inicio</a>
                     </div>
                 </li>
-                <li class="list__item list__item--click">
+                <!-- <li class="list__item list__item--click">
                     <div class="list__button list__button--click">
                         <a href="#" class="nav__link">Idiomas</a>
                         <img src="./img/arrow.svg" class="list__arrow">
@@ -34,7 +34,7 @@
                             <a href="#" class="nav__link nav__link--inside">dentro</a>
                         </li>
                     </ul>
-                </li>
+                </li> -->
                 <li class="list__item list__item--click">
                     <div class="list__button list__button--click">
                         <a href="#" class="nav__link">Continentes</a>
@@ -42,13 +42,19 @@
                     </div>
                     <ul class="list__show">
                         <li class="list__inside">
-                            <a href="#" class="nav__link nav__link--inside">dentro</a>
+                            <a href="#" class="nav__link nav__link--inside">África</a>
                         </li>
                         <li class="list__inside">
-                            <a href="#" class="nav__link nav__link--inside">dentro</a>
+                            <a href="#" class="nav__link nav__link--inside">América</a>
                         </li>
                         <li class="list__inside">
-                            <a href="#" class="nav__link nav__link--inside">dentro</a>
+                            <a href="#" class="nav__link nav__link--inside">Asia</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">Europa</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="#" class="nav__link nav__link--inside">Oceanía</a>
                         </li>
                     </ul>
                 </li>
@@ -56,34 +62,21 @@
         </nav>
     </header>
     <main>
-        <div class="slide-container">
-            <div class="slide-content">
-                <div class="card-wrapper">
-                    <div class="card">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="./img/africa.jpg" alt="" class="card-img">
-                            </div>
-                            <div class="card-content">
-                                <h1 class="name">nombre</h1>
-                                <p class="region">region</p>
-                                <p class="poblacion">poblacion</p>
-                                <p class="idioma">idioma</p> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <section class="buscador">
+            <div class="box">
+                <h1>Search</h1>
+                <form>
+                    <input id="search" type="text" name="" placeholder="Pais...">
+                    <input type="submit" name="" value="Search">
+                </form>
             </div>
-        </div>
-            
-            <!-- <h1>nombre</h1>
-            <p>region</p>
-            <p>poblacion</p>
-            <p>idioma</p> -->
+        </section> 
+        <section class="paises">
+
+        </section>   
     </main>
 
     <!--JS-->
-    <script src="./main.js"></script>
+    <script src="./main.js" type="module" defer></script>
 </body>
 </html>

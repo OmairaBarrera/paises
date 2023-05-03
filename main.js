@@ -1,3 +1,6 @@
+import paises from "./components/paises.js";
+import buscador from "./components/buscador.js";
+
 let listElements = document.querySelectorAll('.list__button--click');
 
 listElements.forEach(listElement => {
@@ -11,3 +14,6 @@ listElements.forEach(listElement => {
         menu.style.height = `${height}px`
     })
 })
+
+paises.mostrar()
+buscador.buscador()

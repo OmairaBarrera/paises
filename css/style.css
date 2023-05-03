@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-
+/*Generales*/
 *{
     margin: 0;
     padding: 0;
@@ -13,11 +13,15 @@ header{
     width: 300px;
 }
 main{
+    display: flex;
+    flex-wrap: wrap;
     width: calc(100vw - 316px);
     margin-left: auto;
 }
+/*Menu de navegacion*/
 .nav{
     width: 300px;
+    position: fixed;
 }
 .nav__link{
     color: azure;
@@ -73,9 +77,53 @@ main{
     transition: height .4s;
     height: 0;
 }
-
+/*Buscador*/
+.buscador{
+    width: 100%;
+}
+.box{
+    text-align: center;
+}
+h1{
+    font-size: 30px;
+}
+input{
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+input[type="text"]
+{
+    background: rgb(201, 198, 198);
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    border-radius: 20px 0 0 20px;
+}
+input[type="submit"]
+{
+    position: relative;
+    left: -3.5px;
+    height: 40px;
+    width: 100px;
+    border: none;
+    outline: none;
+    background: goldenrod;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    color: white;
+}
+.filtro{
+    display: none;
+}
+/*Cards*/
+.paises{
+    display: flex;
+    flex-wrap: wrap;
+}
 .slide-content{
-    margin: 0 40px;
+    margin: 20px 20px;
 }
 .card{
     width: 200px;
@@ -97,7 +145,7 @@ main{
     position: absolute;
     left: 0;
     top: 0;
-    height: 60%;
+    height: 35%;
     width: 100%;
     background-color: floralwhite;
     border-radius: 25px 25px 0 25px;
@@ -118,8 +166,8 @@ main{
 }
 .card-image{
     position: relative;
-    height: 150px;
-    width: 150px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     background: goldenrod;
     padding: 3px;
